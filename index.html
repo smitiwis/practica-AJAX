@@ -8,12 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container mt-5">
         <form action="servidor.php" name="form" method="POST">
             <label for=""> <b>Buscar Persona:</b> </label>
-            <input type="text" name="nombre" placeholder="Escribe un nombre" onkeyup="mostrarSugerencia(this.value);"><hr>
-            <button class="btn btn-success" type="submit">Buscar</button><br>
-            <label style="color: brown;" for="">Resultados</label><br>
+            <input type="text"  onkeyup="mostrarSugerencia(this.value)" placeholder="Escribe un nombre"><hr>
+            <label style="color: rgba(255, 0, 0, 0.959);" for="">Resultados: </label><br>
             <div id="info"></div>
         </form>
     </div>
